@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+        
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>Music + Event</title>
+      <link rel="shortcut icon" type="image/png" href="assets/images/guitar.jpg">
+      
+      <!-- Local CSS Normalizer File -->
+      <link rel="stylesheet" href="assets/style/normalize.css" type="text/css" />
+      
+      <!-- Remote Bootstrap CSS Library -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <!-- Local CSS Stylesheet -->
+      <link rel="stylesheet" href="assets/style/style.css">
+
+      <!-- Local Font-Awesome CSS Library -->
+      <link rel="stylesheet" href="assets/font-awesome/font-awesome.css">
+
+      <!-- Remote moment.js Library -->
+      <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+      <!-- Remote Google Fonts Reference -->
+      <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Main Container -->
+        <div class ="container-fluid">
+
+            <!-- Header -->
+            <div class ="jumbotron">
+                <div class="text-center title">Muvent</div>
+                <h3 class="center btmname">Music + Event</h3>
+            </div>
+
+            <!-- Body -->
+            <div class="row" id="topRow">
+
+                <!-- Left Column -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
+
+                    <!-- Body Panel Left -->
+                    <div class="panel panelOne">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> <strong>Artist Search</strong></h3>
+                        </div>
+
+                        <div class="panel-body panelBodyOne">
+                            <section>
+                                <!-- <form id="search-form" name="search-form" onsubmit="return search()">
+                                    <div class="field container">
+                                        <input type="search" id="query" class="search-field" required="reguired" placeholder="Artist">
+                                        <input type="submit" name="search-btn" id="search-btn" value="Search">
+                                    </div>
+                                </form> -->
+
+                                <form class="form-inline my-2 my-lg-0" id="search-form" name="search-form" onsubmit="return search()">
+                                    <input id="query" class="form-control mr-sm-2 search-field" required="reguired" type="search" placeholder="Search for event" aria-label="Search">
+                                    <button name="search-btn" value="Search" id="search-btn" class="btn btn-outline-denger my-2 my-sm-0 btn-grad" type="submit">Search</button>
+                                 </form>
+                            </section>
+                            <br>
+                            <div data-toggle="tooltip" data-placement="top" data-html="true" title="click this link for music access!" id="dataDrop1"></div>
+                            <div id="dataDrop2"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <!-- Body Panel Right -->
+                    <div class="panel panelTwo">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-calendar" aria-hidden="true"></i> <strong>Event Locator</strong></h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <div id="dataDrop4">
+                                <div id="events">
+                                    <div id="maps">
+                                    </div>
+                                    <div id="locations">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom Column -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    
+                    <!-- Body Panel Right -->
+                    <div class="panel panelThree">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-video-camera" aria-hidden="true"></i> <strong>Videos</strong></h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <div id="dataDrop3">
+                                <ul id="results"></ul>
+                                <div id="buttons"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+                
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+                
+            <div id="footerText">
+                <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright Music + Event 2019</p>
+            </div>
+
+        </div>
+
+        <!-- Remote jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Remote Firebase API -->
+        <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+
+
+        <!-- Google Maps API -->
+         <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmYHEQwXA3bucxiXU2-23Dx-PnAOAO6NA&callback=initMap">
+        </script>
+        
+        <!-- Local JavaScript File -->
+        <script src="assets/javascript/app.js"></script>
+        <!-- <script src="assets/javascript/firebase.js"></script> -->
+        <script>$('[data-toggle="tooltip"]').tooltip();</script> 
+    </body>
+
+</html>
