@@ -18,34 +18,10 @@ Fonts Available:
  */
 
 
- :root {
-    --gradient: linear-gradient(
-        90deg, 
-        #845ec2,
-        #d65db1,
-        #ff6f91,
-        #ff9671,
-        #ffc75f,
-        #f9f871,
-        #00c3be,
-        #00b2c7,
-        #43FE00,
-        #FFC80A
-        );
-  }
-
-  @keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-      background-position: right;
-    }
-}
-
 body {
     min-width: 540px;
-    background-image: radial-gradient(circle, #174cde, #006deb, #0087ed, #009de7, #00b1de, #00bbd2, #00c2b9, #2ac799, #66c266, #9ab72e, #cda500, #ff8700);
+    background-color: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     background-repeat: repeat;
     color: rgba(229, 228, 226, 0.75);
     font-family: 'Sirin Stencil', sans-serif;
@@ -66,31 +42,26 @@ h1 {
 }
 
 .title {
+    margin-top: -30px;
     font-family: 'Righteous', cursive;
-    color: #ee6352;
-    font-size: 8rem;
+    color: rgb(255, 180, 5);
+    font-size: 80px;
     font-weight: bolder;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0.7);
-    background-image: var(--gradient);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 400%;
-    animation: bg-animation 5s infinite alternate;  
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0, 0, 0, 0.801);
 }
-.btn {
-    padding: 10px 20px;
-    background-color: #1dd1a1;
-    color: #fff;
-    font-size: 15px;
-}
-
-.btn:hover {
-    padding: 10px 20px;
-    background-color: #10ac84;
-    color: #fff;
-    font-size: 15px;
-}
-
 
 .subTitle {
     font-family: 'Indie Flower', sans-serif;
@@ -327,4 +298,3 @@ input {
         font-size: 10px;
     }
 
-}
